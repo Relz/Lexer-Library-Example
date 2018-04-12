@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+PROJECT(LexerLibraryExample)
+
+SET(CMAKE_CXX_STANDARD 17)
+
+ADD_EXECUTABLE(LexerLibraryExample main.cpp)
+
+ADD_SUBDIRECTORY(LexerLibrary)
+
+TARGET_LINK_LIBRARIES(LexerLibraryExample LexerLibrary)
